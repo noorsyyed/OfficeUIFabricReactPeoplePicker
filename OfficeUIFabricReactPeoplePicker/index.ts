@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { PeoplePickerTypes, IPeopleProps, IPeoplePersona } from './Peoplepicker';
 
-export class OfficeUIFabricReactPeoplePicker implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+export class ColumbusOfficeUIFabricReactPeoplePicker implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 	private theContainer: HTMLDivElement;
 	private notifyOutputChanged: () => void;
 	private _context: ComponentFramework.Context<IInputs>;

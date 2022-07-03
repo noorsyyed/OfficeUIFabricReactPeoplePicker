@@ -2,10 +2,10 @@
 <ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <!-- Unique Name of Cds Solution-->
-    <UniqueName>OfficeUIFabricReactPeoplePickerPCF</UniqueName>
+    <UniqueName>ColumbusOfficeUIFabricReactPeoplePickerPCF</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="OfficeUIFabricReactPeoplePickerPCF" languagecode="1033" />
+      <LocalizedName description="ColumbusOfficeUIFabricReactPeoplePickerPCF" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0</Version>
@@ -13,19 +13,19 @@
     <Managed>2</Managed>
     <Publisher>
       <!-- Unique Publisher Name of Cds Solution -->
-      <UniqueName>Ramakrishnan</UniqueName>
+      <UniqueName>columbusee</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->
-        <LocalizedName description="Ramakrishnan" languagecode="1033" />
+        <LocalizedName description="Columbus EE" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
         <!-- Description of Cds Publisher in language code -->
-        <Description description="Ramakrishnan" languagecode="1033" />
+        <Description description="Columbus EE" languagecode="1033" />
       </Descriptions>
-      <EMailAddress xsi:nil="true"></EMailAddress>
+      <EMailAddress xsi:nil="true">noor.syed@columbusglobal.com</EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <!-- Customization Prefix for the Cds Publisher-->
-      <CustomizationPrefix>rrpcf</CustomizationPrefix>
+      <CustomizationPrefix>col</CustomizationPrefix>
       <!-- Derived Option Value Prefix for the Customization Prefix of Cds Publisher -->
       <CustomizationOptionValuePrefix>62891</CustomizationOptionValuePrefix>
       <Addresses>
@@ -33,9 +33,9 @@
         <Address>
           <AddressNumber>1</AddressNumber>
           <AddressTypeCode>1</AddressTypeCode>
-          <City xsi:nil="true"></City>
+          <City xsi:nil="true">Hyderabad</City>
           <County xsi:nil="true"></County>
-          <Country xsi:nil="true"></Country>
+          <Country xsi:nil="true">India</Country>
           <Fax xsi:nil="true"></Fax>
           <FreightTermsCode xsi:nil="true"></FreightTermsCode>
           <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
@@ -49,8 +49,8 @@
           <PostOfficeBox xsi:nil="true"></PostOfficeBox>
           <PrimaryContactName xsi:nil="true"></PrimaryContactName>
           <ShippingMethodCode>1</ShippingMethodCode>
-          <StateOrProvince xsi:nil="true"></StateOrProvince>
-          <Telephone1 xsi:nil="true"></Telephone1>
+          <StateOrProvince xsi:nil="true">Telangana</StateOrProvince>
+          <Telephone1 xsi:nil="true">+919293730708</Telephone1>
           <Telephone2 xsi:nil="true"></Telephone2>
           <Telephone3 xsi:nil="true"></Telephone3>
           <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>

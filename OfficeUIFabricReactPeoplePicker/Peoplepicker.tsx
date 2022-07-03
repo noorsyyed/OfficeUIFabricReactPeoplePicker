@@ -14,6 +14,7 @@ import {
 export interface IPeoplePersona {
   text?: string;
   secondaryText?: string;
+  tertiaryText?: string;
 }
 
 export interface IPeopleProps {
@@ -111,7 +112,7 @@ export class PeoplePickerTypes extends BaseComponent<any, IPeoplePickerState> {
     try {
       let tempPeople: IPeoplePersona[] = [];
       await Promise.all(this._picker.current!.items!.map((item) => {
-        tempPeople.push({ "text": item.text, "secondaryText": item.secondaryText });
+        tempPeople.push({ "text": item.text, "secondaryText": item.secondaryText, "tertiaryText": item.tertiaryText });
       }));
       if (this.props.peopleList) {
         this.props.peopleList(tempPeople);
@@ -164,9 +165,14 @@ export class PeoplePickerTypes extends BaseComponent<any, IPeoplePickerState> {
       let People: IPersonaProps[] = [];
       try {
         let tempPeople: any = [];
+        let tempContacts: any = [];
         tempPeople = await this.props.context.webAPI.retrieveMultipleRecords(this.props.context.parameters.entityName.raw!, "?$select=fullname,internalemailaddress&$filter=startswith(fullname,'" + filterText + "')");
+        tempContacts = await this.props.context.webAPI.retrieveMultipleRecords(this.props.context.parameters.secondaryEntityName.raw!, "?$select=fullname,emailaddress1&$filter=startswith(fullname,'" + filterText + "')");
         await Promise.all(tempPeople.entities.map((entity: any) => {
-          People.push({ "text": entity.fullname, "secondaryText": entity.internalemailaddress }); //change fieldname if values are different
+          People.push({ "text": entity.fullname, "secondaryText": entity.internalemailaddress, "tertiaryText": "user" }); //change fieldname if values are different
+        }));
+          await Promise.all(tempContacts.entities.map((entity: any) => {
+          People.push({ "text": entity.fullname, "secondaryText": entity.emailaddress1, "tertiaryText": "contact" }); //change fieldname if values are different
         }));
         resolve(People);
       }
